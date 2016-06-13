@@ -1,3 +1,3 @@
 README.md
-	# Note Ninja
-	## Noelle Vandendriessche
+	#Note Ninja
+	##Noelle Vandendriessche
