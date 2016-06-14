@@ -154,6 +154,12 @@ html, body{
  .benefits h2 {
    color:#0CABB2;
  }
+ /* Creative */
+ .creative li {
+   text-align: center;
+   font-family: Noto Sans;
+
+ }
  /* PRICING */
  .pricing {
    background: #0CABB2 url("../images/background.png") top center no-repeat;
