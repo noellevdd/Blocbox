@@ -2,11 +2,11 @@ html, body{
    overflow-x: hidden;
  }
  body {
-   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
+   font-family: "PT Serif", Helvetica, Arial, sans-serif;
    color:#333333;
  }
  h1, h2, h3, h4, h5, h6 {
-   font-family: "PT Serif", Helvetica, Arial, sans-serif;
+   font-family: "Noto Sans", Helvetica, Arial, sans-serif;
  }
  h2 {
    font-size:28px;
@@ -17,6 +17,7 @@ html, body{
    font-size:16px;
    line-height: 19px;
    font-weight: 100;
+   font-family: "PT Serif";
  }
  /* GRID */
  .container {
@@ -45,7 +46,13 @@ html, body{
    .container {
      width: 750px;
    }
- }
+/* Large screens ----------- */
+ @media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}
+   
  @media (min-width: 992px) {
    .container {
      width: 970px;
@@ -136,6 +143,7 @@ html, body{
    text-align: center;
    display:block;
    position:relative;
+
  }
  .benefits ul {
    margin: 0 auto;
@@ -146,29 +154,45 @@ html, body{
    display: inline-block;
  }
  .benefits i {
-   color:#0CABB2;
+   color:#000000;
    font-size:60px;
    margin:0;
    vertical-align: middle;
  }
  .benefits h2 {
-   color:#0CABB2;
+   color:#000000;
  }
  /* Creative */
- .creative li {
+ .creative {
    text-align: center;
-   font-family: Noto Sans;
-
+   font-family: "Noto Sans";
+   display: block;
+   position: relative;
+   background-color: #0CABB2;
+   background-size:cover;
+   text-align: center;
+   padding:4em 0;
+ }
+ .creative ul {
+   margin: 0 auto;
+   padding:4em 0; 
+ }
+ .creative ul li {
+   list-style-type: none;
+   display: inline-block;
+}
+ .creative h2 {
+   color:#FFFFFF;
  }
  /* PRICING */
  .pricing {
-   background-color: #0CABB2 
+   background-color: #FEFEFE;
    background-size:cover;
    text-align: center;
    padding:4em 0;
  }
  .pricing h2, .pricing p {
-   color:#FFFFFF;
+   color:#000000;
  }
  .pricing ul {
    margin:0 auto;
@@ -193,7 +217,7 @@ html, body{
    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
    font-weight: 600;
    text-transform: uppercase;
-   background: #E2E2E2;
+   background: #0CABB2;
    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
    left:0;
    right:0;
@@ -206,7 +230,7 @@ html, body{
    font-size:50px;
    font-weight: normal;
    margin:40px 0 10px;
-   color:#0CABB2;
+   color:#000000;
  }
  .box h4 span {
    font-size:32px;
@@ -215,7 +239,7 @@ html, body{
  .box h4 span.month {
    font-family: "Noto Sans", Helvetica, Arial, sans-serif;
    font-weight: 100;
-   color:#888888;
+   color:#000000;
    font-size:20px;
    vertical-align: middle;
  }
@@ -238,20 +262,30 @@ html, body{
  }
  /* TESTIMONIALS */
  .testimonials {
-   padding:4em 0;
+   display: block;
+   position: relative;
+   background-color: #0CABB2;
+   background-size:cover;
    text-align: center;
+   padding:4em 0;  
+   text-align: center;
+   background-size:cover;
+
+ }
+ .testimonials p {
+   color: #FFFFFF;
  }
  .testimonials h2 {
-   color:#424242;
+   color:#FFFFFF;
  }
  .testimonials ul li {
    list-style-type: none;
  }
  .testimonials blockquote {
-   color:#FFFFFF;
+   color:#000000;
    text-align: left;
    font-style: italic;
-   background:#0CABB2;
+   background:#FFFFFF;
    position: relative;
    padding:30px;
    width:auto;
@@ -261,6 +295,7 @@ html, body{
    top: 100%;
    left: 13%;
    border: solid transparent;
+   border-color: #000000;
    content: " ";
    height: 0;
    width: 0;
@@ -284,18 +319,30 @@ html, body{
    text-align: left;
    font-size:13px;
    margin-top: 30px;
+   color:#FFFFFF;
  }
  .staggered { 
    padding:5em 0;
    text-align: center;
   }
+  /* SECOND CALL TO ACTION */
+ .action {
+  margin:auto;
+  text-align: center;
+  display:block;
+  position:relative;
+  padding:60px;
+}
+
   /* FOOTER */
- footer {
+  footer {
    background-color: #0CABB2;
    height: 150px;
    position: relative;
    overflow: hidden;
    z-index: 0;
+   border-style: solid;
+
  }
  footer p, footer nav ul {
    font-size:14px;
@@ -333,5 +380,6 @@ html, body{
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
+
    }
  }
