@@ -294,14 +294,17 @@ html, body{
  .testimonials blockquote:after {
    top: 100%;
    left: 13%;
-   border: solid transparent;
-   border-color: #000000;
+   width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 5px 0 5px;
+  border-color: #ffffff transparent transparent transparent;
    content: " ";
    height: 0;
    width: 0;
    position: absolute;
    pointer-events: none;
-   border-top-color: #34495E;
+   border-top-color: #FFFFFF;
    border-width: 10px;
    margin-left: -10px;
  }
@@ -325,20 +328,7 @@ html, body{
    padding:5em 0;
    text-align: center;
   }
-  /* SECOND CALL TO ACTION */
- .action {
-  margin:auto;
-  text-align: center;
-  display:block;
-  position:relative;
-  padding:60px;
-}
-  .action h2 { 
-  padding-top: 50px; 
-}
-  .action p { 
-  padding-top: 30px;
-}
+ 
 
   /* FOOTER */
   footer {
