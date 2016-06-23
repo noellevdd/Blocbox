@@ -403,11 +403,67 @@ html, body{
    height: 70px ;
    width:1441px;
    font-color:#FFFFFF;
-   font-size: 16px;
+   font-size: 22px;
    font-family: "PT Serif";
    background: #0CABB2;
-    position: fixed;
+  position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
+ }
+  .left-nav.open {
    display:block;
+   width:280px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#34495E;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+ @media (min-width:992px) {
+   .left-nav {
+     height: 70px;
+     width:1441px;
+     color:#FFFFFF;
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
+   }
  }
  
   .left-nav .right-hand {
@@ -416,6 +472,14 @@ html, body{
     position: fixed;
     padding-left: 80%;
   }
+  /* drop it second*/
+  .dropit-inverse .dropit-submenu li a {
+    text-align: center;
+    font-size:12px;
+    float:right;
+ }
+
+
   #left p {
     font-color:#333333;
     padding-top: 30px;
@@ -532,7 +596,8 @@ html, body{
      padding:1.5em 1%;
      float:right;
      width:83.33333333%;
-     position: relative;
+     position: relative
+
    }
    .content > .container {
      width:auto;
@@ -541,6 +606,7 @@ html, body{
      width:23%;
      margin:0 1% 25px;
    }
+
  }
  .item-box > img {
    position:absolute;
