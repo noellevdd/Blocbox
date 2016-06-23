@@ -42,15 +42,11 @@ html, body{
    min-height: 1px;
    margin:0 2% 20px;
  }
+
   @media (min-width: 768px) {
    .container {
      width: 750px;
    }
-/* Large screens ----------- */
- @media screen and (min-width: 1900px) {
-  .container {
-    width: 1870px;
-  }
 }
    
  @media (min-width: 992px) {
@@ -72,6 +68,12 @@ html, body{
      width: 1170px;
    }
  }
+  /* Large screens ----------- */
+ @media screen and (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+}
  /* HEADER */
  header {
    color:#FFFFFF;
@@ -438,6 +440,10 @@ html, body{
    list-style-type: none;
    margin-bottom: 15px;
  }
+ /* selected link */
+  .items ul li:active { 
+    background-color: yellow;
+}
   .items ul li a {
    color:#FFFFFF;
    text-decoration: none;
@@ -452,8 +458,8 @@ html, body{
   }
  /* CONTENT */
  .content {
-   padding-left:40px;
-   float:right;
+   padding: 6em 1% 1.5em;
+   float: center;
    width:98%;
    position: relative;
  }
