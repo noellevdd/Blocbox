@@ -447,13 +447,9 @@ html, body{
    width:16px;
    text-align: center;
  }
- /* LEFT NAVBAR SETTINGS */
-   
-  .left-nav .settings {
-   color:#FFFFFF;
-   text-decoration: none;
-   padding-left: 20px;
- }
+  .items .fa fa-cog {
+    padding-top:100px;
+  }
  /* CONTENT */
  .content {
    padding-left:40px;
