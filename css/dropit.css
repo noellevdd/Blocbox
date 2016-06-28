@@ -24,8 +24,20 @@
     display: none;
     min-width: 100px;
     list-style: none;
-	padding: 20;
+	padding: 20px;
 	margin: 20px 0 0;
+
+}
+.dropit .dropit-inverse-trigger {
+    position: relative;
+    top: 100%;
+    right: 5;
+    z-index: 1000;
+    display:none;
+    min-width: 50px;
+    padding:20px;
+    margin: 20px 0 0;
+
 }
 .dropit .dropit-open .dropit-submenu { 
     display: block;
@@ -52,7 +64,8 @@
   display: block;
   width: 0;
   z-index: 1;
- 
+  top: -8px;
+  right: 10px;
  }
  .dropit-inverse.dropit .dropit-open .dropit-submenu:after {
   content: " ";
@@ -65,7 +78,7 @@
   z-index: 1;
   top: -8px;
   right: 10px;
-     
+  
 }
  .dropit .dropit-open .dropit-submenu li {
   display: block;

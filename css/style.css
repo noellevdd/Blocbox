@@ -473,24 +473,17 @@ html, body{
     padding-left: 80%;
   }
   /* drop it second*/
-  .dropit-inverse .dropit-submenu li a {
+   .settings-btn-dropit-inverse li a {
     text-align: center;
-    font-size:12px;
+    font-size:22px;
+    float:center;
+ }
+   .settings-btn-dropit-inverse li ul li a {
     float:right;
- }
- .settings-btn dropit-inverse {
-  height: 70px;
-     width:1441px;
-     color:#FFFFFF;
-     float:left;
-     position: fixed;
-     display:block;
-     transform: translate(0,0);
-     -webkit-transform: translate(0,0); /** Chrome & Safari **/
-     -o-transform: translate(0,0); /** Opera **/
-     -moz-transform: translate(0,0); /** Firefox **/
+    font-size: 12px;
+    
+   }
 
- }
 
 
   #left p {

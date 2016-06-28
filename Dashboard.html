@@ -45,17 +45,16 @@
          <li><a href="#"><i class="fa fa-inbox"></i> </a></li>
          <li><a href="#"><i class="fa fa-inbox"></i> </a></li>
          <li><a href="#"><i class="fa fa-plus-square-o"></i> </a></li>
+
        </ul>
-       
-       <ul class="settings-btn dropit-inverse">
-         <li>
-           <a href="#"><i class="fa fa-cog"></i></a>
+
+       <ul class="settings-btn-dropit-inverse">
+         <li><a href="#"><i class="fa fa-cog"></i></a>
            <ul>
              <li><a href="#"><i class="fa fa-file-o"></i> My Account</a></li>
              <li><a href="#"><i class="fa fa-picture-o"></i> My Collaborators</a></li>
+             </ul>
          </li>
-           </ul>
-       
        </ul>
      </div>
    </nav>
@@ -144,7 +143,7 @@
    <script src="js/dropit.js"></script>
    <script type="text/javascript">
      $(".menu").dropit();
-     $(".settings-btn").dropit();
+     $(".settings-btn-dropit-inverse").dropit();
      $("#menu").click(function() {
          $("#left-nav").toggleClass("open", 200);
      });
