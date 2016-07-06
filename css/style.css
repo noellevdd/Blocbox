@@ -395,8 +395,8 @@ html, body{
    background: #0CABB2;
    display:block;
    text-align: left;
-   position: fixed;
-   z-index: +1;
+   position: absolute;
+   z-index: 1;
  }
 
  .left-nav {
@@ -471,20 +471,22 @@ html, body{
     display: block;
     position: fixed;
     padding-left: 80%;
+  
   }
   /* drop it second*/
    .settings-btn-dropit-inverse li a {
     text-align: center;
     font-size:22px;
-    float:center;
+    z-index: 2;
+    position: absolute;
  }
    .settings-btn-dropit-inverse li ul li a {
     float:right;
     font-size: 12px;
-    
+    position: absolute;
+    margin-top: -2em; 
+    z-index: 2;
    }
-
-
 
   #left p {
     font-color:#333333;
