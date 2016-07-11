@@ -461,7 +461,7 @@ html, body{
      -o-transform: translate(0,0); /** Opera **/
      -moz-transform: translate(0,0); /** Firefox **/
    }
-   .hamburger {
+   .hamburger { 
      display:none;
    }
  }
