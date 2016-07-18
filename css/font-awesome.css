@@ -19,6 +19,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding-right: 20px;
+  padding-top: 10px;
   color: #ffffff;
 }
 /* makes the font 33% larger relative to the icon container */
